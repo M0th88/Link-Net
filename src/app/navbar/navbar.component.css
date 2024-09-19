@@ -1,0 +1,19 @@
+.bg-purple {
+    background-color: #6a1b9a;
+  }
+  
+
+.sticky {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 999; 
+    border-bottom: 2px solid #ccc; 
+  }
+  
+body {
+    padding-top: 75px; 
+  }
+.btn{
+    direction: center;
+}

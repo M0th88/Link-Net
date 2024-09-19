@@ -1,33 +1,57 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container">
-        <!-- Logo y texto centrado -->
-        <a class="navbar-brand mx-auto d-flex align-items-center" href="#">
-            <img src="imagenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
-            Link-Net
-        </a>
-        
-        <!-- Botón para dispositivos móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Navbar superior (logo) -->
+<nav class="navbar navbar-dark bg-primary py-3">
+  <div class="container">
+    <a class="navbar-brand mx-auto d-flex align-items-center" href="#">
+      <img
+        src="assets/iconolinknet.png"
+        alt="Logo"
+        width="30"
+        height="30"
+        class="d-inline-block align-text-top me-2"
+      />
+      Link-Net
+    </a>
+  </div>
+</nav>
 
-        <!-- Menú desplegable -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mx-auto d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-8xl" href="#">Home</a> <!-- Cambia text-lg a text-xl o text-2xl según sea necesario -->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg" href="#plans">Planes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg" href="#about">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-lg" href="#contact">Contacto</a>
-                </li>
-            </ul>
-        </div>
-        
+<!-- Navbar inferior (menú) que se pega al scroll -->
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-purple py-2"
+  [class.sticky]="isSticky"
+>
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Planes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Formas de pago</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Soluciones Empresas y parcelas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contáctanos</a>
+        </li>
+
+        <a class="btn btn-danger ms-lg-3" href="#">PAGO EN LÍNEA</a>
+      </ul>
     </div>
+  </div>
 </nav>
